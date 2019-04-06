@@ -1,0 +1,31 @@
+---
+title: "Awesome Presentation"
+author: "`r input$author`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+## Introduction
+
+This is a demo of using shiny and Rmarkdown to generate presentation for business analytics.
+
+* Airline: `r input$airlines`
+
+## D3 Plot
+
+```{r plot, out.width = "510px"}
+saveWidget(bar_graphD3(), file= 'temp_Pivot_single.html')
+respivot1 = webshot::webshot('temp_Pivot_single.html','my-screenshot-Pivot_single.png', zoom = 1.2)
+knitr::include_graphics(respivot1)
+```
+
+## Comments
+
+```{r note, warning = FALSE}
+note_in_md_pdf(input$markdowninput)
+```
+
