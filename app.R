@@ -21,7 +21,7 @@ library(htmlwidgets)
 library(memor)
 
  webshot::install_phantomjs()
-
+# load data
 temp_flight2=readRDS("temp_flight2.rds")
 
 # Define UI for application that draws a histogram
