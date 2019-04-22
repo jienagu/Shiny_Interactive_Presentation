@@ -1,5 +1,5 @@
 # Shiny_Interactive_Presentation
-This is a shiny app that you can generate interactive presentation from shiny ui with foreign languages
+Unlock the shiny possibilities of supporting foreign languages and unite #rstats from all over the world together!
 
 Live demo: https://appforiarteam.shinyapps.io/D3_folded_bar_presentation/ 
 
